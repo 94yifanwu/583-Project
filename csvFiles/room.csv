@@ -1,0 +1,10 @@
+Room_Number,Type,Status,Bathroom,Towels,Bed_Sheets,Dusting,Vacuum,Electronics
+101,K,Unavailable/Occupied,1,1,1,1,1,1
+102,DQ,Available,1,1,1,1,1,1
+103,K,Available,1,1,1,1,1,1
+201,DBK,Unavailable/Occupied,1,1,1,1,1,1
+202,K,Available,1,1,1,1,1,1
+203,K,Available,1,1,1,1,1,1
+301,DQ,Unavailable/Maintenance,1,1,1,1,1,1
+302,DBK,Unavailable/Dirty,1,0,1,0,0,0
+303,S,Unavailable/Occupied,1,1,1,1,1,1

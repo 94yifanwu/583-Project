@@ -1,13 +1,14 @@
 # Remove previously initialized database file
-rm ./dbFiles/hotel.db
+rm ./dbFiles/movie.db
 
 # Create schema
 sqlite3 < ./bin/dbInit.sql
 
 # Add rows
-sqlite-utils insert ./dbFiles/hotel.db HOUSEKEEP --csv ./csvFiles/housekeep.csv
-sqlite-utils insert ./dbFiles/hotel.db ROOM --csv ./csvFiles/room.csv
-sqlite-utils insert ./dbFiles/hotel.db GUEST --csv ./csvFiles/guest.csv
-sqlite-utils insert ./dbFiles/hotel.db CLEANS --csv ./csvFiles/cleans.csv
-sqlite-utils insert ./dbFiles/hotel.db RESERVES --csv ./csvFiles/reserves.csv
-sqlite-utils insert ./dbFiles/hotel.db STAYS_IN --csv ./csvFiles/stays_in.csv
+sqlite-utils insert ./dbFiles/movie.db CREDITS --csv ./csvFiles/credits.csv
+sqlite-utils insert ./dbFiles/movie.db KEYWORDS --csv ./csvFiles/keywords.csv
+sqlite-utils insert ./dbFiles/movie.db LINKS_SMALL --csv ./csvFiles/links_small.csv
+sqlite-utils insert ./dbFiles/movie.db LINKS --csv ./csvFiles/links.csv
+sqlite-utils insert ./dbFiles/movie.db MOVIES_METADATA --csv ./csvFiles/movies_metadata.csv
+sqlite-utils insert ./dbFiles/movie.db RATINGS_SMALL --csv ./csvFiles/ratings_small.csv
+sqlite-utils insert ./dbFiles/movie.db RATINGS --csv ./csvFiles/ratings.csv

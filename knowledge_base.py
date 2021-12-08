@@ -1,7 +1,7 @@
 import config
 import sqlite_utils
 import sqlite3
-
+from pyswip import prolog
 def kb(your_age,your_genres,your_language):
     print("\nrecommending movie: ...")
 

@@ -5,6 +5,7 @@ import config
 import capability1
 
 def mainMenu():
+    # from here https://manytools.org/hacker-tools/ascii-banner/
     print(
     """
 ███╗   ███╗ ██████╗ ██╗   ██╗██╗███████╗    ██████╗ ███████╗ ██████╗ ██████╗ ███╗   ███╗███╗   ███╗███████╗███╗   ██╗██████╗ 
@@ -13,26 +14,13 @@ def mainMenu():
 ██║╚██╔╝██║██║   ██║╚██╗ ██╔╝██║██╔══╝      ██╔══██╗██╔══╝  ██║     ██║   ██║██║╚██╔╝██║██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║  ██║
 ██║ ╚═╝ ██║╚██████╔╝ ╚████╔╝ ██║███████╗    ██║  ██║███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║███████╗██║ ╚████║██████╔╝
 ╚═╝     ╚═╝ ╚═════╝   ╚═══╝  ╚═╝╚══════╝    ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝╚═════╝ 
-                                                                                                                             
-
     """
     )
-    begin = ""
-    if begin == "":
-        while True:
-            print("\nMain Menu")
-            selection = input(
-                "\nEnter the number of your selection to continue\n"
-                + "1. xxxxxx\n"
-                + "2. xxxxxx\n"
-                + "3. xxxxxx\n"
-                + "Enter \"quit\"  at any time to exit program.\n"
-            )
-            if selection == "1":
-                capability1.cap_1()
-            elif selection == "quit":
-                quit()
-            else:
-                print(
-                    "\nThat is not a valid selection."
-                )
+    while True:
+        print("\n-------------Main Menu-------------\n")
+        print("Please enter the information: ")
+        your_age = input("Enter your age: ")
+        your_genres = input("Enter your genres: ")
+        your_language = input("Enter your language: ")
+        capability1.cap_1(your_age,your_genres,your_language)
+        

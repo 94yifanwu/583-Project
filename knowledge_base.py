@@ -1,7 +1,6 @@
 import config
 import sqlite_utils
 import sqlite3
-import datetime
 
 def kb(your_age,your_genres,your_language):
     print("\nrecommending movie: ...")
